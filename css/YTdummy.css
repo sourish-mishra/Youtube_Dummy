@@ -14,8 +14,8 @@
 }
 .shorts-button,.home-button,.subscription-button,.you-button
 {
-  width:30px;
-  height: 30px;
+  width:24px;
+  height: 24px;
   padding-left: 5px;
 }
 .shorts,.home,.subscription,.you
@@ -27,7 +27,19 @@
   background-color: white ;
   transition: 0.2s;
   cursor: pointer;
+  font-size: 9px;
+  font-family: Roboto, Arial;
 }
+.home-text
+{
+  padding-left:4px;
+}
+.you-button{
+  display: block;
+  padding-left: 15px;
+  margin-bottom: 3px;
+}
+
 .shorts:hover,.home:hover,.subscription:hover,.you:hover
 {
   background-color: rgb(225, 225, 225);
@@ -208,60 +220,104 @@ body {
 }
 
 
-  .video-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 40px;
-  }
-  
-  .thumbnail {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-  } 
-  .Channelname,
-  .viewcount {
-    font-size: 12px;
-    color: rgb(96, 96, 96);
-  }
-  .Channelname{
-    margin-bottom: 4px;
-  }
-  
-  .profile-picture {
-    width: 36px;
-    border-radius: 50px;
-    cursor:pointer;
-  }
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
 
-  .thumbnail-row
+.thumbnail {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+} 
+.Channelname,
+.viewcount {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+.Channelname{
+  margin-bottom: 4px;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+  cursor:pointer;
+}
+
+.thumbnail-row
+{
+  margin-bottom: 8px;
+}
+
+
+/* .Description {
+  width: 200px;
+  margin-left: 10px;
+  vertical-align: top;
+} */
+
+.Channel-pic {
+  width: 50px;
+}
+
+.Title {
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.video-preview {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+
+@media(max-width:768px){
+  .video-grid
   {
-    margin-bottom: 8px;
+    grid-template-columns: 1fr;
   }
-  
-  /* .Description {
-    width: 200px;
-    margin-left: 10px;
-    vertical-align: top;
-  } */
-  
-  .Channel-pic {
-    width: 50px;
+}
+
+@media(min-width:769px) and (max-width:992){
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .Title {
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    line-height: 20px;
-    font-size: 14px;
+}
+
+@media(min-width:993px) {
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  
-  .video-preview {
-    display: grid;
-    grid-template-columns: 50px 1fr;
+}
+
+/* @media(min-width:992px) {
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+} */
+
+  /* .time
+{
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-family: Roboto,Arial;
+  font-size: 12px;
+  padding:4px;
+  position: absolute;
+  bottom: 12px;
+  right: 6px;
+} */
+
 
 
 
