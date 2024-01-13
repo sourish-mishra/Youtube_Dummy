@@ -167,7 +167,7 @@ a{
   justify-content: space-between;
   flex-shrink: 0;
 }
-.upload,.YTapp,.noti
+.right-section-icons
 {
   width:26px;
   height:27px;
@@ -175,6 +175,11 @@ a{
   padding-bottom: 2px;
   padding-top:3.5px;
 }
+.search-icon1
+{
+  display: none;
+}
+
 .profilepic
 {
   height: 35px;
@@ -187,7 +192,7 @@ a{
   border-radius: 23px;
   cursor: pointer;
 }
-.upload1,.noti1,.YTapp1
+.right-section-icons1
 {
   height: 37px;
   border-radius: 27px;
@@ -196,7 +201,7 @@ a{
   cursor: pointer;
   transition:0.2s;
 }
-.upload1:hover,.noti1:hover,.YTapp1:hover
+.right-section-icons1:hover
 {
   background-color: rgb(225, 225, 225);
 }
@@ -282,7 +287,7 @@ body {
   {
     grid-template-columns: 1fr;
   }
-  .sidebar, .hamburger-menu, .Voicesearch-button, .upload1, .YTapp1, .noti1
+  .sidebar, .hamburger-menu, .Searchbox, .search-button, .Voicesearch-button, .right-section-icons1
   {
     display: none;
   }
@@ -292,6 +297,11 @@ body {
   .right-section
   {
     justify-content: flex-end;
+  }
+  .search-icon1
+  {
+    display: inline;
+    margin-right: 24px;
   }
 }
 
