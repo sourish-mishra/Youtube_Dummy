@@ -282,6 +282,17 @@ body {
   {
     grid-template-columns: 1fr;
   }
+  .sidebar, .hamburger-menu, .Voicesearch-button, .upload1, .YTapp1, .noti1
+  {
+    display: none;
+  }
+  body {
+    padding-left: 24px;
+  }
+  .right-section
+  {
+    justify-content: flex-end;
+  }
 }
 
 @media(min-width:769px) and (max-width:992){
