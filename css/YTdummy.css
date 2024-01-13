@@ -158,7 +158,6 @@ a{
 }
 
 .right-section {
-
   width: 200px;
   display:flex;
   margin-top: 8px;
@@ -287,9 +286,9 @@ body {
   {
     grid-template-columns: 1fr;
   }
-  .sidebar, .hamburger-menu, .Searchbox, .search-button, .Voicesearch-button, .right-section-icons1
+  .sidebar, .hamburger-menu, .middle-section, .right-section-icons1
   {
-    display: none;
+    display: none !important;
   }
   body {
     padding-left: 24px;
@@ -297,10 +296,11 @@ body {
   .right-section
   {
     justify-content: flex-end;
+    width: auto;
   }
   .search-icon1
   {
-    display: inline;
+    display: inline !important;
     margin-right: 24px;
   }
 }
